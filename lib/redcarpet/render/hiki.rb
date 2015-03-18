@@ -4,6 +4,10 @@ module Redcarpet
   module Render
     class Hiki < Base
       # Block-level calls
+      def block_code(code, language)
+        "<<<#{$/}#{code}>>>#{$/*2}"
+      end
+
       def paragraph(text)
         text + $/ * 2
       end
