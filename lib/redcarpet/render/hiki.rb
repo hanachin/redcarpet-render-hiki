@@ -8,7 +8,7 @@ module Redcarpet
         text + $/
       end
 
-      # Span-level clals
+      # Span-level calls
       def link(link, title, content)
         # FIXME I don't care about title
         "[[#{content}|#{link}]]"
