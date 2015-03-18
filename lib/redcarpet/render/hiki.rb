@@ -13,6 +13,18 @@ module Redcarpet
         "#{?!*header_level}#{text}#{$/*2}"
       end
 
+      def list(contents, list_type)
+        l = list_type == :unordered ? '*' : '#'
+        contents.lines.map {|line|
+          "#{l}#{line}"
+        }.join
+      end
+
+      def list_item(text, list_type)
+        # FIXME mixed list type
+        text
+      end
+
       def paragraph(text)
         text + $/ * 2
       end
