@@ -1,0 +1,4 @@
+language: ruby
+rvm:
+  - 2.2
+script: bundle exec ruby test/test_recarpet-render-hiki.rb

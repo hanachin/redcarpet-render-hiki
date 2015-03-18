@@ -1,4 +1,5 @@
 # Redcarpet::Render::Hiki
+[![Build Status](https://travis-ci.org/hanachin/redcarpet-render-hiki.svg)](https://travis-ci.org/hanachin/redcarpet-render-hiki)
 
 TODO: Write a gem description
 
