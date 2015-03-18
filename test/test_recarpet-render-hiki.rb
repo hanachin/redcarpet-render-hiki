@@ -21,6 +21,6 @@ Markdownをhiki記法に変換したい。
 世界がちょっと幸せになりそうだからだ。
 HIKI
 
-    assert_equal(rc_markdown.render(markdown), hiki)
+    assert_equal(hiki, rc_markdown.render(markdown))
   end
 end
