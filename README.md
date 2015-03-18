@@ -19,6 +19,12 @@ Or install it yourself as:
 
 ## Usage
 
+```console
+$ md2hiki README.md
+```
+
+or
+
 ```rb
 markdown = <<MARKDOWN
 [redcarpet-render-hiki](https://github.com/hanachin/redcarpet-render-hiki)で、

@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'redcarpet'
+require 'redcarpet/render/hiki'
+
+markdown_p = -> (path) {
+  ext = File.extname(path).downcase
+  File.exist?(path) && %w(.md .markdown).include?(ext)
+}
+
+unless ARGV.all?(&markdown_p)
+  puts 'Usage: md2hiki file.md [file.md ...]'
+  exit 1
+end
+
+renderer = Redcarpet::Render::Hiki
+rc_markdown = Redcarpet::Markdown.new(renderer.new, fenced_code_blocks: true, strikethrough: true)
+
+ARGV.each do |path|
+  basename  = File.basename(path, '.*')
+  dir       = File.dirname(path)
+  hiki_path = File.join(dir, "#{basename}.hiki")
+  markdown  = File.read(path)
+  File.write(hiki_path, rc_markdown.render(markdown))
+end
