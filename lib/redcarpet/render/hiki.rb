@@ -8,6 +8,11 @@ module Redcarpet
         "<<<#{$/}#{code}>>>#{$/*2}"
       end
 
+      def header(text, header_level)
+        # FIXME escape !
+        "#{?!*header_level}#{text}#{$/*2}"
+      end
+
       def paragraph(text)
         text + $/ * 2
       end

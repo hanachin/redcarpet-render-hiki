@@ -44,6 +44,14 @@ _emphasized_ and *emphasized* and __strong emphasis__ and **strong emphasis**
 
 ~~だるいだるい~~
 
+見出し
+
+# 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+##### 見出し5
+
 おわり
 MARKDOWN
 
@@ -86,6 +94,18 @@ puts :helloworld
 ''emphasized'' and ''emphasized'' and '''strong emphasis''' and '''strong emphasis'''
 
 ==だるいだるい==
+
+見出し
+
+!見出し1
+
+!!見出し2
+
+!!!見出し3
+
+!!!!見出し4
+
+!!!!!見出し5
 
 おわり
 
