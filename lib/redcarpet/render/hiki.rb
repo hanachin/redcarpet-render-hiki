@@ -2,7 +2,7 @@ require "redcarpet/render/hiki/version"
 
 module Redcarpet
   module Render
-    module Hiki
+    class Hiki < Base
       # Your code goes here...
     end
   end
