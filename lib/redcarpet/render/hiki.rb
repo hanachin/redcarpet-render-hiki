@@ -8,6 +8,10 @@ module Redcarpet
         "<<<#{$/}#{code}>>>#{$/*2}"
       end
 
+      def block_quote(quote)
+        quote.chomp.lines.map {|line| %(""#{line}) }.join + $/
+      end
+
       def header(text, header_level)
         # FIXME escape !
         "#{?!*header_level}#{text}#{$/*2}"
