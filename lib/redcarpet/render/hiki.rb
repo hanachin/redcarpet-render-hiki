@@ -32,6 +32,11 @@ module Redcarpet
         # FIXME I don't care about title
         "[[#{content}|#{link}]]"
       end
+
+      def strikethrough(text)
+        # FIXME escape =
+        "==#{text}=="
+      end
     end
   end
 end

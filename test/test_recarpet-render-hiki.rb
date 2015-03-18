@@ -5,7 +5,7 @@ require 'redcarpet/render/hiki'
 class TestRecarpetRenderHiki < Test::Unit::TestCase
   def test_render_markdown_as_hiki
     renderer = Redcarpet::Render::Hiki
-    rc_markdown = Redcarpet::Markdown.new(renderer.new, fenced_code_blocks: true)
+    rc_markdown = Redcarpet::Markdown.new(renderer.new, fenced_code_blocks: true, strikethrough: true)
 
     markdown = <<MARKDOWN
 [redcarpet-render-hiki](https://github.com/hanachin/redcarpet-render-hiki)で、
@@ -41,6 +41,8 @@ puts :helloworld
 文字の修飾
 
 _emphasized_ and *emphasized* and __strong emphasis__ and **strong emphasis**
+
+~~だるいだるい~~
 
 おわり
 MARKDOWN
@@ -82,6 +84,8 @@ puts :helloworld
 文字の修飾
 
 ''emphasized'' and ''emphasized'' and '''strong emphasis''' and '''strong emphasis'''
+
+==だるいだるい==
 
 おわり
 
