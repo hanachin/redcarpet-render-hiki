@@ -5,7 +5,7 @@ require 'redcarpet/render/hiki'
 class TestRecarpetRenderHiki < Test::Unit::TestCase
   def test_render_markdown_as_hiki
     renderer = Redcarpet::Render::Hiki
-    rc_markdown = Redcarpet::Markdown.new(renderer)
+    rc_markdown = Redcarpet::Markdown.new(renderer.new)
 
     markdown = <<MARKDOWN
 [redcarpet-render-hiki](https://github.com/hanachin/redcarpet-render-hiki)で、
