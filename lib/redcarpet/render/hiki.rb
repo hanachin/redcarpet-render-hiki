@@ -9,6 +9,11 @@ module Redcarpet
       end
 
       # Span-level calls
+      def image(link, title, alt_text)
+        # FIXME I don't care about title
+        "[[#{alt_text}|#{link}]]"
+      end
+
       def link(link, title, content)
         # FIXME I don't care about title
         "[[#{content}|#{link}]]"

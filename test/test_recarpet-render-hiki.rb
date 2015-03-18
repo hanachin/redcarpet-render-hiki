@@ -12,6 +12,12 @@ class TestRecarpetRenderHiki < Test::Unit::TestCase
 Markdownをhiki記法に変換したい。
 なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
 世界がちょっと幸せになりそうだからだ。
+
+任意のURLへのリンク
+
+![クローバー](http://jp.rubyist.net/theme/clover/clover_h1.png)
+
+おわり
 MARKDOWN
 
     hiki = <<HIKI
@@ -19,6 +25,13 @@ MARKDOWN
 Markdownをhiki記法に変換したい。
 なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
 世界がちょっと幸せになりそうだからだ。
+
+任意のURLへのリンク
+
+[[クローバー|http://jp.rubyist.net/theme/clover/clover_h1.png]]
+
+おわり
+
 HIKI
 
     assert_equal(hiki, rc_markdown.render(markdown))
