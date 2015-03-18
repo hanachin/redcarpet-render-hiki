@@ -5,7 +5,7 @@ module Redcarpet
     class Hiki < Base
       # Block-level calls
       def paragraph(text)
-        text + $/
+        text + $/ * 2
       end
 
       # Span-level calls
