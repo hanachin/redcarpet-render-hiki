@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Redcarpet::Render::Hiki::VERSION
   spec.authors       = ["Seiei Higa"]
   spec.email         = ["hanachin@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Hiki renderer for the redcarpet.}
+  spec.description   = %q{Hiki renderer plugin for the redcarpet. You can convert Markdown to Hiki easier.}
+  spec.homepage      = "https://github.com/hanachin/redcarpet-render-hiki"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

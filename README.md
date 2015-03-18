@@ -1,7 +1,7 @@
 # Redcarpet::Render::Hiki
 [![Build Status](https://travis-ci.org/hanachin/redcarpet-render-hiki.svg)](https://travis-ci.org/hanachin/redcarpet-render-hiki)
 
-TODO: Write a gem description
+Hiki renderer plugin for the redcarpet. You can convert Markdown to Hiki easier.
 
 ## Installation
 
@@ -19,7 +19,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```rb
+markdown = <<MARKDOWN
+[redcarpet-render-hiki](https://github.com/hanachin/redcarpet-render-hiki)で、
+Markdownをhiki記法に変換したい。
+なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
+世界がちょっと幸せになりそうだからだ。
+MARKDOWN
+
+renderer    = Redcarpet::Render::Hiki
+rc_markdown = Redcarpet::Markdown.new(renderer.new)
+puts rc_markdown.render(markdown)
+
+# =>
+# [[redcarpet-render-hiki|https://github.com/hanachin/redcarpet-render-hiki]]で、
+# Markdownをhiki記法に変換したい。
+# なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
+# 世界がちょっと幸せになりそうだからだ。
+```
 
 ## Contributing
 
