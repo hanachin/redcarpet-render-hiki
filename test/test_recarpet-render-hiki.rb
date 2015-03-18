@@ -38,6 +38,10 @@ puts :helloworld
 puts :helloworld
 ~~~
 
+文字の修飾
+
+_emphasized_ and *emphasized* and __strong emphasis__ and **strong emphasis**
+
 おわり
 MARKDOWN
 
@@ -74,6 +78,10 @@ puts :helloworld
 <<<
 puts :helloworld
 >>>
+
+文字の修飾
+
+''emphasized'' and ''emphasized'' and '''strong emphasis''' and '''strong emphasis'''
 
 おわり
 

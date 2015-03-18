@@ -13,6 +13,16 @@ module Redcarpet
       end
 
       # Span-level calls
+      def double_emphasis(text)
+        # FIXME escape '
+        "'''#{text}'''"
+      end
+
+      def emphasis(text)
+        # FIXME escape '
+        "''#{text}''"
+      end
+
       def image(link, title, alt_text)
         # FIXME I don't care about title
         "[[#{alt_text}|#{link}]]"
