@@ -52,6 +52,10 @@ _emphasized_ and *emphasized* and __strong emphasis__ and **strong emphasis**
 #### 見出し4
 ##### 見出し5
 
+水平線
+
+- - - - -
+
 順番なし
 
 - アイテム1
@@ -139,6 +143,10 @@ puts :helloworld
 !!!!見出し4
 
 !!!!!見出し5
+
+水平線
+
+----
 
 順番なし
 

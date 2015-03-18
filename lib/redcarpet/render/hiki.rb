@@ -17,6 +17,10 @@ module Redcarpet
         "#{?!*header_level}#{text}#{$/*2}"
       end
 
+      def hrule
+        '-' * 4 + $/ * 2
+      end
+
       def list(contents, list_type)
         l = list_type == :unordered ? '*' : '#'
         contents.lines.map {|line|
