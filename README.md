@@ -3,6 +3,8 @@
 
 Hiki renderer plugin for the redcarpet. You can convert Markdown to Hiki easier.
 
+See also: [takahashim/md2hiki](https://github.com/takahashim/md2hiki)
+
 ## Installation
 
 Add this line to your application's Gemfile:
