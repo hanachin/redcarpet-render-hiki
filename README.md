@@ -29,8 +29,6 @@ or
 markdown = <<MARKDOWN
 [redcarpet-render-hiki](https://github.com/hanachin/redcarpet-render-hiki)で、
 Markdownをhiki記法に変換したい。
-なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
-世界がちょっと幸せになりそうだからだ。
 MARKDOWN
 
 renderer    = Redcarpet::Render::Hiki
@@ -40,8 +38,6 @@ puts rc_markdown.render(markdown)
 # =>
 # [[redcarpet-render-hiki|https://github.com/hanachin/redcarpet-render-hiki]]で、
 # Markdownをhiki記法に変換したい。
-# なぜなら、Markdownで書かれた記事をhikiに変換できるとるびまの編集の手間が減って、
-# 世界がちょっと幸せになりそうだからだ。
 ```
 
 ## Contributing
