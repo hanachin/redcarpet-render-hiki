@@ -23,9 +23,9 @@ module Redcarpet
 
       def list(contents, list_type)
         l = list_type == :unordered ? '*' : '#'
-        contents.lines.map {|line|
+        contents.gsub($/*2, $/*1).lines.map {|line|
           "#{l}#{line}"
-        }.join
+        }.join << $/*1
       end
 
       def list_item(text, list_type)
